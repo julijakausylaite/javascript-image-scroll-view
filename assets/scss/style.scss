@@ -1,0 +1,83 @@
+$bgColor: #f2f2f2;
+$buttonBg: #9e9e9e;
+$buttonHover: #4f4c4c;
+$textFont: 'Lobster', cursive;
+$buttonFont: 'Varela Round', sans-serif;
+
+body{
+	background-color: $bgColor;
+}
+
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sort-button {
+	background-color: $buttonBg;
+	border-radius: 28px;
+	border: none;
+	display: inline-block;
+	color: #ffffff;
+	font-family: $textFont;
+	font-size: 1rem;
+	padding: 10px 31px;
+	margin: 10px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #a8a6a8;
+}
+.sort-button:hover {
+	background-color: $buttonHover;
+}
+.sort-button:active {
+	transform: translateY(2px);
+}
+
+.images {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.photo{
+		width: calc(50% - 30px);
+		margin: 15px;
+	}
+	.title{
+		width: calc(50% - 30px);
+		margin: 15px;
+		font-family: $textFont;
+		font-size: 1.25rem;
+		line-height: 1.5;
+		text-align: left;
+	}
+	img{
+		float: right;
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.container{
+		max-width: 350px;
+	}
+	.images{
+		.photo{
+			width: 90%;
+			margin: 5px 0;
+		}
+		.title{
+			width: 90%;
+			margin: 0 15px 20px;
+			text-align: center;
+		}
+		img{
+			float: none;
+		}
+	}
+}
