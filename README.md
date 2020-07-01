@@ -7,9 +7,11 @@ Front-End:
   - SCSS
   - JavaScript
 
+
 Back-End:
   - PHP
   - AJAX connection to API details
+
 
 For extra points added:
   - Sort options (A to Z, Z to A)
