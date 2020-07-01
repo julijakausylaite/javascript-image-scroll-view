@@ -5,7 +5,7 @@ JavaScript home task.
 Front-End:
   - HTML
   - CSS, SCSS
-  - JavaScript
+  - JavaScript, jQuery
 
 
 Back-End:
